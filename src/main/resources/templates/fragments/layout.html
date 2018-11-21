@@ -1,0 +1,71 @@
+<html lang="en" th:fragment="layout (template, menu)" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>七牛上传小工具</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="logo.ico" rel="icon">
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <script src="js/validate.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/validate.min.css">
+
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+
+        .content {
+            margin-top: 50px;
+        }
+
+        .navbar-customize {
+            background-color: #550c49;
+            color: white;
+            width: 100%;
+        }
+
+        .navbar-default .navbar-brand {
+            color: white;
+        }
+
+        .lead {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container navbar-customize">
+        <div class="navbar-header">
+            <div class="navbar-brand" href="#">七牛上传小工具</div>
+        </div>
+    </div>
+</nav>
+
+<div class="container content">
+    <div th:replace="${template}"/>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <br>
+        <p class="text-muted">解释权归七牛上传小工具所有.</p>
+    </div>
+</footer>
+</body>
+</html>

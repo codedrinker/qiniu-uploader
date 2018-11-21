@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'error')}">
+<body>
+<div class="page-header">
+    <h2>访问异常</h2>
+</div>
+<p class="lead" th:text="${message}"></p>
+<p class="lead">访问出现异常，请联系"码匠笔记"订阅号寻求技术支持。</p>
+</body>
+</html>

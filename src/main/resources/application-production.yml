@@ -1,0 +1,17 @@
+spring:
+  thymeleaf:
+    mode: HTML5
+logging:
+  level:
+    org:
+      springframework: error
+server:
+  port: ${PORT:5000}
+
+geekgo:
+  domain: ${GEEKGO_DOMAIN}
+
+qiniu:
+  accessKey: ${ACCESSKEY}
+  secretKey: ${SECRETKEY}
+  domain: ${DOMAIN}

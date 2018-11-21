@@ -1,0 +1,1 @@
+web: java -jar -Dspring.profiles.active=production target/qiniu-uploader-1.0.0.jar
