@@ -39,7 +39,7 @@ public class QiniuAdapter {
     private String path = "images/";
 
     public String upload(QiniuFile qiniuFile) {
-        Configuration cfg = new Configuration(Zone.beimei());
+        Configuration cfg = new Configuration(Zone.zone0());
         UploadManager uploadManager = new UploadManager(cfg);//...生成上传凭证，然后准备上传
         String[] files = StringUtils.split(qiniuFile.getFileName(), ".");
         if (files.length < 2) {
