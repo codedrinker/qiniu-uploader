@@ -1,8 +1,8 @@
 package com.codedrinker.adapter;
 
 import com.codedrinker.dto.QiniuFile;
-import com.codedrinker.exception.ErrorCodeException;
 import com.codedrinker.error.ErrorCode;
+import com.codedrinker.exception.ErrorCodeException;
 import com.google.gson.Gson;
 import com.qiniu.common.QiniuException;
 import com.qiniu.common.Zone;
@@ -11,7 +11,6 @@ import com.qiniu.storage.Configuration;
 import com.qiniu.storage.UploadManager;
 import com.qiniu.storage.model.DefaultPutRet;
 import com.qiniu.util.Auth;
-import com.sun.xml.internal.org.jvnet.fastinfoset.FastInfosetException;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
