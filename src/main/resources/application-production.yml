@@ -8,9 +8,6 @@ logging:
 server:
   port: ${PORT:5000}
 
-geekgo:
-  domain: ${GEEKGO_DOMAIN}
-
 qiniu:
   accessKey: ${ACCESSKEY}
   secretKey: ${SECRETKEY}
